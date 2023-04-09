@@ -1,9 +1,10 @@
+
+
 /******************************************************************************
 
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
+                              Kruskal algorithm implementation in c++
+                                  a.jnadi@innopolis.university
+                                          DSA2023_LAB12
 *******************************************************************************/
 
 #include <iostream>
