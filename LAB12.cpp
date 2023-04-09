@@ -5,6 +5,7 @@
                               Kruskal algorithm implementation in c++
                                   a.jnadi@innopolis.university
                                           DSA2023_LAB12
+                                          
 *******************************************************************************/
 
 #include <iostream>
