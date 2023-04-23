@@ -156,7 +156,7 @@ class Graph
                 
                 if((distance + edgWeight) < dist[adjNode->ID])
                 {
-                    if(dist[adjNode->ID] == 1e9)
+                    if(dist[adjNode->ID] != 1e9)
                         pq.erase({dist[adjNode->ID], *adjNode});
                     
                     dist[adjNode->ID] = distance + edgWeight;
