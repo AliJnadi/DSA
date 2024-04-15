@@ -98,10 +98,8 @@ class Graph<V, E> {
         return false;
     }
     
-    int[] dijkstra(Vertex source) {
+    void dijkstra(Vertex source) {
         int n = this.vertices.size();
-        int[] dij_out = new int[n];
-        
         PriorityQueue<Node> pQueue = new PriorityQueue<Node>(n, new Node());
         
         for(Vertex v : vertices) {
@@ -123,7 +121,6 @@ class Graph<V, E> {
                 }
             }
         }
-        return dij_out;
     }
 }
 
@@ -168,11 +165,7 @@ public class Main
 		graph.dijkstra(A);
 		
 		for(Graph.Vertex v : graph.vertices) {
-		    System.out.println(v.dist);
+		    System.out.println("Path from " + A.lable + " to " + v.lable + " costs " + v.dist);
 		}
-		
-// 		for(Graph.Edge e : graph.edges) {
-// 		    System.out.println(e.from.lable + " <--[ " + e.weight + " ]--> " + e.to.lable);
-// 		}
 	}
 }
